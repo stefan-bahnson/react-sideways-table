@@ -1,0 +1,79 @@
+@media screen and (min-width: 1084px) {
+  .dataTableContainer {
+    justify-content: center;
+    .wrapper {
+      .tableRowContainer {
+        .tableRow {
+          .rowItem {
+            max-width: 140px;
+            flex-wrap: wrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dataTableContainer {
+  display: flex;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0 auto;
+
+  .wrapper {
+    display: inline-flex;
+    background-color: $mock-layout;
+    overflow: auto;
+
+    .pinnedColumn {
+      display: inline-flex;
+      align-items: center;
+      line-height: 15px;
+      padding: 14px;
+      height: 20px;
+      //text-align: center;
+      overflow: hidden;
+      background-color: #40a070;
+    }
+
+    .tableHeaderContainer {
+      display: inline-flex;
+      flex-direction: column;
+      background-color: #9dffce;
+      box-shadow: 5px 0 10px -5px #707070;
+
+      .tableHeader {
+        padding: 14px;
+        height: 20px;
+        display: inline-flex;
+        align-items: center;
+        line-height: 15px;
+      }
+    }
+
+    .tableRowContainer {
+      display: flex;
+      overflow: auto;
+      width: 100%;
+
+      .tableRow {
+        display: flex;
+        flex-direction: column;
+        &:nth-child(even){
+          background-color: $mock-layout;
+        }
+
+        .rowItem {
+          display: inline-flex;
+          align-items: center;
+          line-height: 15px;
+          padding: 14px;
+          height: 20px;
+          //text-align: center;
+          overflow: hidden;
+        }
+
+      }
+    }
+  }
+}
